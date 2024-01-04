@@ -1,0 +1,18 @@
+.map-container,
+.map {
+  height: min(25rem, 80vh);
+}
+.map {
+  height: min(20rem, 80vh);
+}
+
+@media (min-width: 40em) {
+  .map-container,
+  .map {
+    height: min(35rem, 80vh);
+  }
+}
+
+.shadows {
+  box-shadow: 4px 6px 15px #444;
+}

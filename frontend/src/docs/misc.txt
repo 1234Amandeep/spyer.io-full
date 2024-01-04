@@ -1,0 +1,14 @@
+Player list:
+  1. LMF - Mitoma
+  2. RMF - Messi
+  3. ST - Halland
+  4. AMF - De Bruney
+  5. DMF - Caicedo
+  6. DMF - Gross
+  7. LB - Estupinean
+  8. RB - Hakimi
+  9. CB - Maldini
+  10. CB - Maguire
+  11. Gk - O Black
+Formation : 4-2-3-1
+Manager : De Zerbi

@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend made with express to fetch data from external api's",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fetch",
+    "api",
+    "express.js",
+    "node.js",
+    "backend"
+  ],
+  "author": "Amandeep Singh",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "validator": "^13.11.0"
+  }
+}
