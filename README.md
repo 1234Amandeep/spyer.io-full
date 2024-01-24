@@ -38,3 +38,42 @@ It's a web-app designed for accessing up-to-date data related to football player
 ```bash
  npm run build
 ```
+
+## Tech Stack
+
+**Client:** React, Context-API, Bootstrap 5, Leafjs mapping library, HTML5, CSS3, JavaScript.
+
+**Server:** Node.js, Express.js, Mongo db, Mongoose, JWT tokens.
+
+**Third-party API:** Tranfer Market API, Geo Coding API.
+
+**Additional:** Leafjs mapping library.
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+## FAQ
+
+#### 1. Can the user see more than one player on map at the same time ?
+
+No, for now you can only view one player data at the moment.
+
+#### 2. Can I search for individuals which are not football players ?
+
+Yes, but primiraly it's meant to be used for knowing about football players.
+
+#### 3. Does it provide ex players info ?
+
+Yes, it does provide retired players data as well.
+
+## Usage
+
+1. You can search for your favourite football (soccer) player.
+2. User can get complete description of the player as well as you can see his home town on the world map.
+3. User can explore the map as he want.
+4. User can create his favourite player list for later on stuff.
