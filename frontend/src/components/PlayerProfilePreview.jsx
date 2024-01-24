@@ -23,7 +23,9 @@ export default function PlayerProfilePreview() {
 
   const addToWishlist = async () => {
     const isExists = contains(favList, playerProfile);
+    console.log("outside addtowishlist if");
     if (!isExists) {
+      console.log("inside addtowishlist if");
       const temp = [...favList, playerProfile];
       localStorage.setItem("favList", JSON.stringify(temp));
 
@@ -31,14 +33,17 @@ export default function PlayerProfilePreview() {
 
       // adding to db
       if (user) {
-        const res = await fetch("http://localhost:4000/addToWishlist", {
-          method: "POST",
-          body: JSON.stringify({ favList: [...favList, playerProfile] }),
-          credentials: "include",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await fetch(
+          "https://spyer-io-api.onrender.com/addToWishlist",
+          {
+            method: "POST",
+            body: JSON.stringify({ favList: [...favList, playerProfile] }),
+            credentials: "include",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
         const data = await res.json();
         console.log(data);
@@ -52,7 +57,14 @@ export default function PlayerProfilePreview() {
     <>
       <section className="player-profile-preview-outer d-flex justify-content-center mt-md-5 mt-0">
         <div className="player-profile-preview ">
-          <article className="card horizontal">
+          <article
+            className="card horizontal"
+            onClick={addToWishlist}
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
             <div className="card-inner">
               <span className="card-pin simple"></span>
               <div className="card-image">
@@ -71,16 +83,8 @@ export default function PlayerProfilePreview() {
                     {playerProfile.currentClub},&nbsp;{playerProfile.status}
                   </div>
                   <span className="card-time">{playerProfile.shirtNumber}</span>
-                  <a
-                    type="button"
-                    className="nav-link"
-                    onClick={addToWishlist}
-                    data-bs-toggle="offcanvas"
-                    href="#offcanvasExample"
-                    role="button"
-                    aria-controls="offcanvasExample"
-                  >
-                    <i className="fa-regular fa-heart"></i>
+                  <a className="nav-link">
+                    <i type="button" className="fa-regular fa-heart"></i>
                   </a>
                   {/* <a
                     type="button"

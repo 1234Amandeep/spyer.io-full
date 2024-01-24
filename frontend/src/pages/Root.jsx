@@ -10,7 +10,7 @@ export default function Root() {
   const { setFavList } = useContext(favListContext);
 
   useEffect(() => {
-    fetch("http://localhost:4000/", {
+    fetch("https://spyer-io-api.onrender.com/root", {
       method: "GET",
       credentials: "include",
       headers: {

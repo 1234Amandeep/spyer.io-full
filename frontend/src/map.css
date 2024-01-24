@@ -3,7 +3,7 @@
   height: min(25rem, 80vh);
 }
 .map {
-  height: min(20rem, 80vh);
+  height: min(28rem, 80vh);
 }
 
 @media (min-width: 40em) {

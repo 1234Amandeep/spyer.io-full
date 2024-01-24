@@ -21,7 +21,7 @@ export default function Searchbar() {
   };
 
   const getPlayerProfile = async (queryName) => {
-    fetch(`http://localhost:4000/fetch/${queryName}`)
+    fetch(`https://spyer-io-api.onrender.com/fetch/${queryName}`)
       .then((response) => response.json())
       .then(({ data }) => {
         let temp = data.profile.profile;

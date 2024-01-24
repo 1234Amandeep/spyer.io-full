@@ -29,7 +29,7 @@ export default function Signup() {
     console.log(favList);
 
     // sending user cred. to server
-    const res = await fetch("http://localhost:4000/signup", {
+    const res = await fetch("https://spyer-io-api.onrender.com/signup", {
       method: "POST",
       body: JSON.stringify({ email, password, favList }),
       credentials: "include",
@@ -48,7 +48,6 @@ export default function Signup() {
       setUser({ _id: data._id, email: data.email });
 
       // navigating to home
-      navigate("/");
     } else {
       // setting errors
       setIsError(true);

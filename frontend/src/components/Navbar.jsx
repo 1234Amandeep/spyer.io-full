@@ -11,7 +11,7 @@ export default function Navbar() {
 
   // handle logout
   const handleLogout = async () => {
-    const res = await fetch("http://localhost:4000/logout", {
+    const res = await fetch("https://spyer-io-api.onrender.com/logout", {
       method: "GET",
       credentials: "include",
     });

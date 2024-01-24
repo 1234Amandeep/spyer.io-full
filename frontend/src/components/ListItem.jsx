@@ -17,14 +17,17 @@ export default function ListItem({ item }) {
 
     if (user) {
       // remove from db
-      const res = await fetch(`http://localhost:4000/removeFromWishlist`, {
-        method: "POST",
-        credentials: "include",
-        body: JSON.stringify({ favList: temp }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(
+        `https://spyer-io-api.onrender.com/removeFromWishlist`,
+        {
+          method: "POST",
+          credentials: "include",
+          body: JSON.stringify({ favList: temp }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const data = await res.json();
       console.log(data);

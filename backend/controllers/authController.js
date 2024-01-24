@@ -1,5 +1,6 @@
 const userModel = require("../models/user");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 // handling errors
 const handleErrors = (err) => {
@@ -37,7 +38,7 @@ const handleErrors = (err) => {
 const maxAge = 3 * 24 * 60 * 60;
 // creating fn to create Token
 const createToken = (id) => {
-  return jwt.sign({ id }, "spyer.io", { expiresIn: maxAge });
+  return jwt.sign({ id }, process.env.SECRET_KEY, { expiresIn: maxAge });
 };
 
 module.exports.signup_post = async (req, res) => {
@@ -50,12 +51,14 @@ module.exports.signup_post = async (req, res) => {
     // creating token
     const token = createToken(user._id);
 
-    console.log(token);
+    // console.log(token);
 
     // setting jwt into cookies
     res.cookie("jwt", token, {
       httpOnly: true,
       maxAge: maxAge * 1000,
+      sameSite: "None",
+      secure: true,
     });
 
     // sending response to client
@@ -70,7 +73,7 @@ module.exports.signup_post = async (req, res) => {
 
 module.exports.login_post = async (req, res) => {
   const { email, password } = req.body;
-  // console.log(email, password);
+  console.log(email, password);
 
   try {
     // trying to login user
@@ -78,8 +81,14 @@ module.exports.login_post = async (req, res) => {
 
     if (user) {
       const token = createToken(user._id);
+      console.log(token);
 
-      res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
+      res.cookie("jwt", token, {
+        httpOnly: true,
+        maxAge: maxAge * 1000,
+        sameSite: "None",
+        secure: true,
+      });
       res
         .status(200)
         .json({ _id: user._id, email: user.email, favList: user.favList });
@@ -93,6 +102,11 @@ module.exports.login_post = async (req, res) => {
 
 module.exports.logout_get = (req, res) => {
   console.log("inside logout");
-  res.cookie("jwt", "", { maxAge: 1 });
+  res.cookie("jwt", "", {
+    httpOnly: true,
+    maxAge: 1,
+    sameSite: "None",
+    secure: true,
+  });
   res.redirect("/");
 };
