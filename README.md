@@ -1,9 +1,10 @@
+
 # Spyer.io
 
-The Spyer.io is a web app designed for accessing up-to-date and comprehensive data related to football (soccer) player from your screens.
+Spyer.io is a web application that provides comprehensive and up-to-date information primarily about football(soccer) players.
+
 
 ## Table of Contents
-
 - [Introduction](#introduction)
 - [Features](#features)
 - [Demo](#demo)
@@ -24,14 +25,16 @@ The Spyer.io is a web app designed for accessing up-to-date and comprehensive da
 
 ## Introduction
 
-It's a web-app designed for accessing up-to-date data related to football players from around the world with just few clicks.
+It's a web app designed for accessing up-to-date information related to football players from across the globe with just a few clicks.
 
 ## Features
 
-- User Authentication and Authorization
-- User can get all the information about his favourite football player by searching for his name.
-- User can even see the player's home town on the world map.
-- User can create his favourite players list. It will be saved in the db for him.
+- Authentication and authorization of users.
+- Users can easily find information on their favorite football players by searching for their names.
+- On the world map, users can view the hometown of their favorite player.
+- Users can create and save a list of their favorite players on the backend.
+
+
 
 ## Installation
 
@@ -39,15 +42,17 @@ It's a web-app designed for accessing up-to-date data related to football player
  npm run build
 ```
 
+
 ## Tech Stack
 
-**Client:** React, Context-API, Bootstrap 5, Leafjs mapping library, HTML5, CSS3, JavaScript.
+**Client:** React, Context-API, Bootstrap 5, Leaflet.js mapping library, HTML5, CSS3, JavaScript.
 
-**Server:** Node.js, Express.js, Mongo db, Mongoose, JWT tokens.
+**Server:** Node.js, Express.js, Mongo DB, Mongoose, JWT Tokens.
 
 **Third-party API:** Tranfer Market API, Geo Coding API.
 
-**Additional:** Leafjs mapping library.
+**Additional:** Leaflet.js mapping library.
+
 
 ## Contributing
 
@@ -57,23 +62,27 @@ See `contributing.md` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
+
 ## FAQ
 
-#### 1. Can the user see more than one player on map at the same time ?
+#### 1. Is it possible to view more than one player on the map simultaneously?
 
-No, for now you can only view one player data at the moment.
+No, currently it is not possible to view more than one player on the map at the same time.
 
-#### 2. Can I search for individuals which are not football players ?
+#### 2. Is it possible for a user to search for individuals who are not football players?
 
-Yes, but primiraly it's meant to be used for knowing about football players.
+Although users can search for individuals who are not football players, the primary focus of this app is on football players.
+ 
+#### 3. Does it provide information about former players?
 
-#### 3. Does it provide ex players info ?
+Yes, it does provide retired player's data as well.
 
-Yes, it does provide retired players data as well.
+
 
 ## Usage
 
-1. You can search for your favourite football (soccer) player.
-2. User can get complete description of the player as well as you can see his home town on the world map.
-3. User can explore the map as he want.
-4. User can create his favourite player list for later on stuff.
+1. Users can search for their preferred football (soccer) players.
+2. Users can view a player's hometown on the world map and access a complete player description.
+3. Users are free to explore the map as they please.
+4. Users have the option to create a list of their favorite players, which they can access later on. This allows them to easily keep track of their preferred players and access their information quickly.
+
