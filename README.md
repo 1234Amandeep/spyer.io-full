@@ -15,7 +15,7 @@ Spyer.io is a web application that provides comprehensive and up-to-date informa
 
 ## Demo
 
-[spyer.io](https://spyer-io.web.app)
+[spyer.io](https://spyer-io-v1-0-1.web.app)
 
 ![demo pic1](https://firebasestorage.googleapis.com/v0/b/spyer-io.appspot.com/o/Screenshot%20from%202024-01-07%2019-10-11.png?alt=media&token=d701bac1-e913-4046-8793-88656b559bcd)
 
