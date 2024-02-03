@@ -42,7 +42,7 @@ It's a web app designed for accessing up-to-date information related to football
 ## Installation
 
 ```bash
- npm run build
+ npm install
 ```
 
 
