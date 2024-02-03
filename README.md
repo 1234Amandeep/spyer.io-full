@@ -15,8 +15,11 @@ Spyer.io is a web application that provides comprehensive and up-to-date informa
 
 ## Demo
 
-[spyer.io](https://spyer-io-v1-0-1.web.app)
-
+[spyer.io](https://spyer-io-v1-0-1.web.app) || Test User: mario@google.com, Password: test12
+```Test User:
+ Email: mario@google.com, Password: test12.
+```
+ 
 ![demo pic1](https://firebasestorage.googleapis.com/v0/b/spyer-io.appspot.com/o/Screenshot%20from%202024-01-07%2019-10-11.png?alt=media&token=d701bac1-e913-4046-8793-88656b559bcd)
 
 ![demo pic2](https://firebasestorage.googleapis.com/v0/b/spyer-io.appspot.com/o/Screenshot%20from%202024-01-07%2019-10-27.png?alt=media&token=7bc4802b-35e6-4835-a2ea-921eb9b3304e)
